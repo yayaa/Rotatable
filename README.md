@@ -7,7 +7,7 @@ This project is under [MIT license][1]
 
 Sample Video
 ============
-[![Rotatable Sample Video](http://yayandroid.com/data/github_library/rotatable/rotatable_sample.gif)](https://www.youtube.com/watch?v=Gkd9QpAZmU8)
+[![Rotatable Sample Video](http://yayandroid.com/data/github_library/rotatable/rotatable_sample.gi)](https://www.youtube.com/watch?v=Gkd9QpAZmU8)
 
 # Usage
 
