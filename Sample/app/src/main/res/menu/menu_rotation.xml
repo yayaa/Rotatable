@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LandingActivity">
+
+    <group
+        android:id="@+id/group_enable"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/action_touch"
+            android:checkable="true"
+            android:title="@string/action_touch_enabled" />
+    </group>
+
+    <group
+        android:id="@+id/group_rotation"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_rotate_x"
+            android:checkable="true"
+            android:title="@string/action_rotate_x" />
+        <item
+            android:id="@+id/action_rotate_y"
+            android:checkable="true"
+            android:title="@string/action_rotate_y" />
+        <item
+            android:id="@+id/action_rotate_both"
+            android:checkable="true"
+            android:title="@string/action_rotate_both" />
+    </group>
+
+</menu>

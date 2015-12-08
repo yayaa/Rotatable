@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Rotatable</string>
+
+    <string name="group_rotation">Rotation Direction</string>
+    <string name="action_rotate_x">Rotate X</string>
+    <string name="action_rotate_y">Rotate Y</string>
+    <string name="action_rotate_both">Rotate Both</string>
+    <string name="action_touch_enabled">Touch Enabled</string>
+    <string name="action_touch_disabled">Touch Disabled</string>
+
+    <string name="landing_touch">Touch Rotation</string>
+    <string name="landing_animation">Animate Rotation</string>
+
+    <string name="hint_rotation_count">Count</string>
+    <string name="hint_rotation_distance">Distance</string>
+    <string name="hint_rotation_pivot_x">Pivot X</string>
+    <string name="hint_rotation_pivot_y">Pivot Y</string>
+
+    <string name="button_build">Build</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_random_animate">Random Animate</string>
+
+    <string name="toast_count_distance">You cannot specify rotation count and distance together.</string>
+</resources>
