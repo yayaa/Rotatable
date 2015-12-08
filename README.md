@@ -3,6 +3,8 @@ Rotatable
 
 This is a helper class actually, it simplifies having a view as rotatable by setting touch events and handling a lot of boilerplate works! So if you need a component that needs to be able to rotate by touch, you do not have to deal with all these stuff.
 
+Works on *minSdkVersion 14*
+
 This project is under [MIT license][1] 
 
 Sample Video
