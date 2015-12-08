@@ -1,11 +1,10 @@
 Rotatable
 =========
+[![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
+[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 This is a helper class actually, it simplifies having a view as rotatable by setting touch events and handling a lot of boilerplate works! So if you need a component that needs to be able to rotate by touch, you do not have to deal with all these stuff.
-
-Works on *minSdkVersion 14*
-
-This project is under [MIT license][1] 
 
 Sample Video
 ============
@@ -91,7 +90,7 @@ Possible to change rotation direction at runtime as well, but only with defined 
 rotatable.orientationChanged(int newOrientation)
 ```
 <ul><li>
-If your rotatable object needs to calculate its rotationCount or rotationDistance, then it might be tricky while user rotates screen and change orientation. So prevent this, you can listen orientationChanges and notify rotatable object about it, so it can rearrange itself. To do it so, you need to declare `configChanges` in your AndroidManifest.xml as `orientation` but as it is described [here][2] after Android v3.0 it is also required `screenSize` to capture this orientationChange events.
+If your rotatable object needs to calculate its rotationCount or rotationDistance, then it might be tricky while user rotates screen and change orientation. So prevent this, you can listen orientationChanges and notify rotatable object about it, so it can rearrange itself. To do it so, you need to declare `configChanges` in your AndroidManifest.xml as `orientation` but as it is described [here][1] after Android v3.0 it is also required `screenSize` to capture this orientationChange events.
 </li></ul>
 
 ```java 
@@ -119,5 +118,4 @@ dependencies {
 }
 ```
 
-[1]: http://opensource.org/licenses/mit-license.php
-[2]: http://stackoverflow.com/a/7366101/1171484
+[1]: http://stackoverflow.com/a/7366101/1171484
