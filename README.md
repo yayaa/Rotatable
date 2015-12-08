@@ -3,6 +3,7 @@ Rotatable
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](http://opensource.org/licenses/MIT)
+[![Maven Central](https://img.shields.io/maven-central/v/com.yayandroid/Rotatable.svg)](http://search.maven.org/#search%7Cga%7C1%7CRotatable)
 
 This is a helper class actually, it simplifies having a view as rotatable by setting touch events and handling a lot of boilerplate works! So if you need a component that needs to be able to rotate by touch, you do not have to deal with all these stuff.
 
@@ -107,11 +108,9 @@ rotatable.takeAttention()
 This is actually just for fun :) You can call this method where you want user to realize that he/she can move this component around :)
 </li></ul>
 
-
 ## Download
 Add library dependency to your `build.gradle` file:
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.yayandroid/Rotatable.svg)](http://search.maven.org/#search%7Cga%7C1%7CRotatable)
 ```groovy
 dependencies {    
      compile 'com.yayandroid:Rotatable:1.0.0'
@@ -119,7 +118,6 @@ dependencies {
 ```
 
 ## License
-
 ```
 The MIT License (MIT)
 
