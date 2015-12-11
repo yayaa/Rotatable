@@ -5,6 +5,8 @@ Rotatable
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Maven Central](https://img.shields.io/maven-central/v/com.yayandroid/Rotatable.svg)](http://search.maven.org/#search%7Cga%7C1%7CRotatable)
 
+<a href="http://www.methodscount.com/?lib=com.yayandroid%3ARotatable%3A1.0.0"><img src="https://img.shields.io/badge/Methods count-108-e91e63.svg"></img></a> <a href="http://www.methodscount.com/?lib=com.yayandroid%3ARotatable%3A1.0.0"><img src="https://img.shields.io/badge/Size-23 KB-e91e63.svg"></img></a> 
+
 This is a helper class actually, it simplifies having a view as rotatable by setting touch events and handling a lot of boilerplate works! So if you need a component that needs to be able to rotate by touch, you do not have to deal with all these stuff.
 
 Sample Video
