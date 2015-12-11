@@ -1,9 +1,6 @@
 Rotatable
 =========
-[![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
-[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](http://opensource.org/licenses/MIT)
-[![Maven Central](https://img.shields.io/maven-central/v/com.yayandroid/Rotatable.svg)](http://search.maven.org/#search%7Cga%7C1%7CRotatable)
+<a href="http://developer.android.com/index.html" target="_blank"><img src="https://img.shields.io/badge/platform-android-green.svg"/></a> <a href="https://android-arsenal.com/api?level=14" target="_blank"><img src="https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat"/></a> <a href="http://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat"/></a> <a href="http://search.maven.org/#search%7Cga%7C1%7CRotatable" target="_blank"><img src="https://img.shields.io/maven-central/v/com.yayandroid/Rotatable.svg"/></a>
 
 <a href="http://www.methodscount.com/?lib=com.yayandroid%3ARotatable%3A1.0.0" target="_blank"><img src="https://img.shields.io/badge/Methods count-108-e91e63.svg"></img></a> <a href="http://www.methodscount.com/?lib=com.yayandroid%3ARotatable%3A1.0.0" target="_blank"><img src="https://img.shields.io/badge/Size-23 KB-e91e63.svg"></img></a> 
 
