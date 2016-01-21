@@ -131,7 +131,7 @@ public class Rotatable implements View.OnTouchListener {
     /**
      * If your application can be used multi orientated, then you have to declare
      * orientation changes to rotatable object, so it can recalculate its maxDistances.
-     * <p/>
+     * <p>
      * You only need to inform rotatable object about orientation changes, when you specified
      * {@link Builder#rotationCount(float)} or {@link Builder#rotationDistance(float)}
      */
@@ -215,7 +215,16 @@ public class Rotatable implements View.OnTouchListener {
      * Rotates once around in given direction
      */
     public void rotateOnce() {
-        rotate(rotation, 180);
+        float toDegree;
+        if (rotation == ROTATE_X) {
+            toDegree = rootView.getRotationX();
+        } else if (rotation == ROTATE_Y) {
+            toDegree = rootView.getRotationY();
+        } else {
+            toDegree = rootView.getRotation();
+        }
+        toDegree += 180;
+        rotate(rotation, toDegree);
     }
 
     /**
@@ -232,6 +241,14 @@ public class Rotatable implements View.OnTouchListener {
     @Side
     int getCurrentVisibleView() {
         return currentVisibleView;
+    }
+
+    public float getCurrentXRotation() {
+        return currentXRotation;
+    }
+
+    public float getCurrentYRotation() {
+        return currentYRotation;
     }
 
     private Animator getAnimatorForProperty(Property property, final int direction, float degree) {
