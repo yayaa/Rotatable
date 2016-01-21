@@ -7,6 +7,7 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.Configuration;
+import android.support.annotation.IntDef;
 import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.util.DisplayMetrics;
 import android.util.Property;
@@ -24,15 +25,23 @@ import java.util.ArrayList;
 public class Rotatable implements View.OnTouchListener {
 
     private static final int NULL_INT = -1;
+    private final int FIT_ANIM_TIME = 300;
 
     public static final int DEFAULT_ROTATE_ANIM_TIME = 500;
     public static final int ROTATE_BOTH = 0;
     public static final int ROTATE_X = 1;
     public static final int ROTATE_Y = 2;
 
-    private final int FIT_ANIM_TIME = 300;
-    private final int FRONT_VIEW = 3;
-    private final int BACK_VIEW = 4;
+    @IntDef({ROTATE_X, ROTATE_Y, ROTATE_BOTH})
+    public @interface Direction {
+    }
+
+    public static final int FRONT_VIEW = 3;
+    public static final int BACK_VIEW = 4;
+
+    @IntDef({FRONT_VIEW, BACK_VIEW})
+    public @interface Side {
+    }
 
     private RotationListener rotationListener;
     private View rootView, frontView, backView;
@@ -97,7 +106,7 @@ public class Rotatable implements View.OnTouchListener {
     /**
      * You can specify rotation direction as axis X, Y or BOTH
      */
-    public void setDirection(int direction) {
+    public void setDirection(@Direction int direction) {
         if (!isRotationValid(direction)) {
             throw new IllegalArgumentException("Cannot specify given value as rotation direction!");
         }
@@ -200,6 +209,29 @@ public class Rotatable implements View.OnTouchListener {
 
         animatorSet.playTogether(animators);
         animatorSet.start();
+    }
+
+    /**
+     * Rotates once around in given direction
+     */
+    public void rotateOnce() {
+        rotate(rotation, 180);
+    }
+
+    /**
+     * Returns true if currently frontView is visible, false otherwise
+     */
+    public boolean isFront() {
+        return getCurrentVisibleView() == FRONT_VIEW;
+    }
+
+    /**
+     * Returns currentVisibleView value as {@link Rotatable.Side}
+     */
+    public
+    @Side
+    int getCurrentVisibleView() {
+        return currentVisibleView;
     }
 
     private Animator getAnimatorForProperty(Property property, final int direction, float degree) {
@@ -526,7 +558,7 @@ public class Rotatable implements View.OnTouchListener {
         /**
          * Specify an axis or both axises to rotate around
          */
-        public Builder direction(int rotation) {
+        public Builder direction(@Direction int rotation) {
             this.rotation = rotation;
             return this;
         }

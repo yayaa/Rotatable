@@ -19,15 +19,9 @@ android {
     }
 }
 
-repositories {
-    maven {
-        url "https://jitpack.io"
-    }
-}
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
-    compile 'com.yayandroid:Rotatable:1.0.0'
+    compile 'com.yayandroid:Rotatable:1.1.1'
 }
