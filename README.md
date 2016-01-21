@@ -112,7 +112,7 @@ Add library dependency to your `build.gradle` file:
 
 ```groovy
 dependencies {    
-     compile 'com.yayandroid:Rotatable:1.0.0'
+     compile 'com.yayandroid:Rotatable:1.1.1'
 }
 ```
 
